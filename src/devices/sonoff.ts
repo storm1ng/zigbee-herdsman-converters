@@ -6267,13 +6267,11 @@ export const definitions: DefinitionWithExtend[] = [
             }),
             m.numeric<"customClusterEwelink", SonoffEwelink>({
                 name: "level_for_calibration",
-                access: "ALL",
+                access: "STATE_GET",
                 cluster: "customClusterEwelink",
                 attribute: "levelForCalibration",
-                description:
-                    "Brightness Calibration ensures your dimmer works within the optimal range for your specific bulb." +
-                    " By adjusting the slider, you select the bulb's lowest stable brightness and preferred maximum brightness.",
-                entityCategory: "config",
+                description: "Brightness Calibration ensures your dimmer works within the optimal range for your specific bulb.",
+                entityCategory: "diagnostic",
                 valueMin: 1,
                 valueMax: 100,
                 valueStep: 1,
