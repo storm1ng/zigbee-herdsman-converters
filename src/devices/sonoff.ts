@@ -6214,6 +6214,7 @@ export const definitions: DefinitionWithExtend[] = [
                     "After calibration, the light adjustment becomes smooth and consistent.. Takes about 2 minutes; device unavailable during calibration.",
                 access: "SET",
                 entityCategory: "config",
+                fzConvert: () => {},
             }),
             m.enumLookup<"customClusterEwelink", SonoffEwelink>({
                 name: "calibration_status",
