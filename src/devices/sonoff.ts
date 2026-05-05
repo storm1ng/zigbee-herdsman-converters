@@ -6212,7 +6212,7 @@ export const definitions: DefinitionWithExtend[] = [
                 attribute: "setCalibrationAction",
                 description:
                     "After calibration, the light adjustment becomes smooth and consistent.. Takes about 2 minutes; device unavailable during calibration.",
-                access: "ALL",
+                access: "SET",
                 entityCategory: "config",
             }),
             m.enumLookup<"customClusterEwelink", SonoffEwelink>({
@@ -6270,8 +6270,8 @@ export const definitions: DefinitionWithExtend[] = [
                 cluster: "customClusterEwelink",
                 attribute: "levelForCalibration",
                 description:
-                    "Brightness Calibration ensures your dimmer works within the optimal range for your specific bulb."
-                    + " By adjusting the slider, you select the bulb's lowest stable brightness and preferred maximum brightness.",
+                    "Brightness Calibration ensures your dimmer works within the optimal range for your specific bulb." +
+                    " By adjusting the slider, you select the bulb's lowest stable brightness and preferred maximum brightness.",
                 entityCategory: "config",
                 valueMin: 1,
                 valueMax: 100,
